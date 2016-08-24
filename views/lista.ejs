@@ -1,0 +1,36 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/css/skeleton.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+</head>
+<body class="container" style="margin-top:2%">
+    <h2>Tweets</h2>
+    <table class="u-full-width">
+        <thead>
+            <tr>
+                <th style="text-align: center;">#</th>
+                <th>Nome</th>
+                <th>Nome de Exibição</th>
+                <th>Seguidores</th>
+                <th>Linguagem</th>
+                <th>Tweet</th>
+            </tr>     
+        </thead>
+        <tbody>
+            <% for(var i = 0; i < pesquisa.length; i++){ %>
+            <tr>
+                <td><%= pesquisa[i].hashtag%></td>
+                <td><%= pesquisa[i].name%></td>
+                <td><%= pesquisa[i].screen_name%></td>
+                <td style="text-align: right;"><%= pesquisa[i].followers_count%></td>
+                <td style="text-align: center;"><%= pesquisa[i].lang%></td>
+                <td><%= pesquisa[i].tweet%></td>
+            </tr>
+            <% } %>
+        </tbody>
+    </table>
+    <form action="/pesquisa" method="GET"> <input class="button button-primary" type="submit" value="Nova Pesquisa"/></form>
+</body>
+</html>

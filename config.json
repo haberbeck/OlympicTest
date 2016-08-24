@@ -1,0 +1,26 @@
+{
+	"twitter" : {
+		"CONSUMER_KEY": "yj9f8FqdqVHzAoTW9lUY1SBpY",
+		"CONSUMER_SECRET": "nJmMsGMAa8MuhpAaWGQaWJyYTUpxb1w8zyhuGpzICIvLPp8rom",
+		"ACCESS_TOKEN_KEY": "766094985603190785-OCErHyOsowqXJ24YyRrcFbl1OyCwzjI",
+		"ACCESS_TOKEN_SECRET": "x3hcVMGNmNnXODxl48vvaJAk7p5HwqzMzia9tw0Zt2Dzz",
+		"COUNT": "100",
+		"RESULT_TYPE": "mixed",
+		"HASHTAGS ": [
+			"#brasil2016",
+			"#brazil2016",
+			"#jogosolimpicos",
+			"#olimpiadas",
+			"#olimpiadas2016",
+			"#olympics",
+			"#rio2016",
+			"#riodejaneiro"
+		]
+	},
+	"cassandra":{
+		"CONTACTPOINTS": "192.241.129.183",
+		"AUTHPROVIDER_USER": "cassandra",
+		"AUTHPROVIDER_PASSWORD": "cassandra",
+		"KEYSPACE": "olympictest"
+	}
+}

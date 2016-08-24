@@ -1,0 +1,21 @@
+var config = require("config.json")
+
+config.twitter = {};
+config.cassandra = {};
+
+config.twitter.CONSUMER_KEY = 'yj9f8FqdqVHzAoTW9lUY1SBpY';
+config.twitter.CONSUMER_SECRET= 'nJmMsGMAa8MuhpAaWGQaWJyYTUpxb1w8zyhuGpzICIvLPp8rom';
+config.twitter.ACCESS_TOKEN_KEY= '766094985603190785-OCErHyOsowqXJ24YyRrcFbl1OyCwzjI';
+config.twitter.ACCESS_TOKEN_SECRET= 'x3hcVMGNmNnXODxl48vvaJAk7p5HwqzMzia9tw0Zt2Dzz';
+config.twitter.COUNT = '100';
+config.twitter.RESULT_TYPE = 'mixed';
+
+config.cassandra.CONTACTPOINTS = '208.68.39.71';
+config.cassandra.AUTHPROVIDER_USER = 'cassandra';
+config.cassandra.AUTHPROVIDER_PASSWORD = 'cassandra';
+config.cassandra.KEYSPACE =  'olympictest';
+
+config.twitter.HASHTAGS = ['#brasil'];
+//config.twitter.HASHTAGS = ['#brazil','#brasil','#brasil2016','#brazil2016','#jogosolimpicos','#olimpiadas','#olimpiadas2016','#olympics','#rio2016','#riodejaneiro'];
+
+module.exports = config;
